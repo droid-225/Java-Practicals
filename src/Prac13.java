@@ -9,7 +9,7 @@ public class Prac13 {
 		String temp, fraction, prePoint = "", postPoint = "";
 		boolean afterDecPoint = false;
 		int prePointInt, postPointInt, denom;
-		
+			
 		System.out.println("Enter a decimal value: ");
 		decimal = in.nextDouble();
 		

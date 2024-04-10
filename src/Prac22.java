@@ -25,7 +25,7 @@ class Student {
 public class Prac22 {
 	public static void main(String args[]) {
 		Student s1 = new Student();
-		Student s2 = new Student("Rishit", 111, 85.62);
+		Student s2 = new Student("Name", 111, 85.62);
 		
 		System.out.println("Default Student Info: ");
 		s1.displayInfo();

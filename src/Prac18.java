@@ -14,7 +14,7 @@ public class Prac18 {
 		
 		System.out.println("Enter Your Elements: ");
 		for(int i = 0; i < size; i++) {
-			System.out.print("Enter Element " + i + ": ");
+			System.out.print("Enter Element " + (i + 1) + ": ");
 			ints[i] = in.nextInt();
 		}
 		

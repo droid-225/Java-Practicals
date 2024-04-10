@@ -14,8 +14,8 @@ public class Prac16 {
 		}
 		
 		System.out.println("Your Numbers Reversed: ");
-		for(String s: nums) {
-			System.out.print(s + " ");
+		for(int i = (nums.length - 1); i > 0; i--) {
+			System.out.print(nums[i] + " ");
 		}
 	}
 	
