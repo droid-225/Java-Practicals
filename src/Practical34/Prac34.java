@@ -7,8 +7,17 @@ public class Prac34 {
 		ArrayList<Object> list = new ArrayList<>();
 		Loan loan = new Loan(12123.33, "Rupees");
 		Date date = new Date();
+		String str = "Hello!";
+		Circle c = new Circle(2, "cm");
 		
+		list.add(loan);
+		list.add(date);
+		list.add(str);
+		list.add(c);
 		
+		for(Object o : list) {
+			System.out.println(o.toString());
+		}
 	}
 }
 
@@ -21,8 +30,8 @@ class Loan {
 		this.currency = currency;
 	}
 	
-	void display() {
-		System.out.println("Loan Amount: " + amount + " " + currency);
+	public String toString() {
+		return "Loan Amount = " + amount + " " + currency;
 	}
 }
 
@@ -35,9 +44,9 @@ class Circle {
 		this.units = units;
 	}
 	
-	void display() {
-		System.out.println("Radius of Circle: " + radius + " " + units);
-		System.out.println("Circumference of Circle: " + (2 * Math.PI * radius) + " " + units);
-		System.out.println("Area of Circle: " + (Math.PI * Math.pow(radius, 2)) + " " + units + " squared");
+	public String toString() {
+		return ("Radius of Circle: " + radius + " " + units +
+				"\nCircumference of Circle: " + (2 * Math.PI * radius) + " " + units +
+				"\nArea of Circle: " + (Math.PI * Math.pow(radius, 2)) + " " + units + " squared");
 	}
 }

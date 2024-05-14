@@ -32,6 +32,7 @@ public class Prac24 {
 			emps[i-1] = new Employee(name, age, salary);
 			System.out.println();
 		}
+		in.close();
 		
 		System.out.println("Employee Information:");
 		for(Employee e: emps) {

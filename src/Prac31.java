@@ -9,6 +9,7 @@ public class Prac31 {
 		binaryString = in.next();
 	
 		bin2Dec(binaryString);
+		in.close();
 	}
 	
 	static void bin2Dec(String binaryString) {
